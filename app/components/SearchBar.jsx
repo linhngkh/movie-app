@@ -2,17 +2,12 @@ import Image from "next/image";
 
 const SearchBar = () => {
   return (
-    <div className=" overflow-hidden">
+    <div className="relative overflow-hidden h-80">
       <Image
         src="/banner.jpg"
         alt="banner"
-        width={800}
-        height={400}
-        style={{
-          objectFit: "contain",
-         
-          objectPosition: "center",
-        }}
+        fill
+        style={{ objectFit: "cover" }}
       />
     </div>
   );
