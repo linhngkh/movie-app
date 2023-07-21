@@ -3,13 +3,13 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="flex  items-center justify-between mb-5">
-      <h1 className="font-[700] flex text-2xl bg-gradient-to-r from-green-400 to-blue-500  text-transparent bg-clip-text">
-        The Movies App
-      </h1>
+      <Link href="/">
+        <h1 className="font-[700] flex text-2xl bg-gradient-to-r from-green-400 to-blue-500  text-transparent bg-clip-text">
+          The Movies App
+        </h1>
+      </Link>
+
       <ul className="flex justify-between space-x-4">
-        <li>
-          <Link href="/">Movies</Link>
-        </li>
         <li>
           <Link href="/">TV Shows</Link>
         </li>
